@@ -19,6 +19,10 @@
       justify-content: center;
       font-size: 10vh;
     }
+    
+    img {
+      border-radius: 50%;
+    }
 
     .screen-reader-text {
       border: 0;
@@ -36,6 +40,10 @@
 </head>
 <body>
   <h1 class="screen-reader-text">Martin ist skeptisch.</h1>
-  <span aria-hidden="true">🤨</span>
+  <picture>
+    <source type="image/avif" src="skeptisch.avif">
+    <source type="image/webp" src="skeptisch.webp">
+    <img src="skeptisch.jpg" alt="Martin ist skeptisch." height="200" width="200" decoding="async">
+  </picture>
 </body>
 </html>
