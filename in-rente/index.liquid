@@ -9,43 +9,43 @@
 
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      width: 100vw;
-      height: 100vh;
-      max-height: -webkit-fill-available;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 10vh;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        max-height: -webkit-fill-available;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: clamp(5.81rem, calc(4.58rem + 6.10vw), 9.31rem);
+        flex-direction: column;
     }
 
     .screen-reader-text {
-      border: 0;
-      clip: rect(1px, 1px, 1px, 1px);
-      clip-path: inset(50%);
-      height: 1px;
-      margin: -1px;
-      overflow: hidden;
-      padding: 0;
-      position: absolute;
-      width: 1px;
-      word-wrap: normal !important;
+        border: 0;
+        clip: rect(1px, 1px, 1px, 1px);
+        clip-path: inset(50%);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        word-wrap: normal !important;
     }
 
     p {
-      font-size: 20px;
-      font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
-      max-width: 700px;
-      padding: 1em;
-      text-align: center;
-      margin-top: 1em;
+        font-size: clamp(1.44rem,calc(1.31rem + 0.62vw),1.95rem);
+        font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+        max-width: 700px;
+        padding: 1em;
+        text-align: center;
     }
   </style>
 </head>
 <body>
   <h1 class="screen-reader-text">Martin ist in Rente.</h1>
   <span aria-hidden="true">👴🏻</span>
-  <p>Leider noch nicht. Aber in {{ pension.daysTill }} ist es soweit!</p>
+  <p>In {{ pension.daysTill }} Tagen ist es soweit!</p>
 </body>
 </html>
