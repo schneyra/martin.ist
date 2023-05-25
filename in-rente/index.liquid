@@ -32,10 +32,20 @@
       width: 1px;
       word-wrap: normal !important;
     }
+
+    p {
+      font-size: 20px;
+      font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+      max-width: 700px;
+      padding: 1em;
+      text-align: center;
+      margin-top: 1em;
+    }
   </style>
 </head>
 <body>
   <h1 class="screen-reader-text">Martin ist in Rente.</h1>
-  <p>Leider noch nicht. Aber in {{ pension.daysTill }} Tagen ist es soweit!</p>
+  <span aria-hidden="true">👴🏻</span>
+  <p>Leider noch nicht. Aber in 9260 ist es soweit!</p>
 </body>
 </html>
